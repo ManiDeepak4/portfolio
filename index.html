@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Professional Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(120deg, #4c3228, #8b6c5c);
+    }
+
+    header, section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 50px;
+    }
+
+    header {
+      height: 100vh;
+      background: #6a4a3a;
+      color: white;
+    }
+
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center;
+      margin-bottom: 20px;
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    .nav-btn {
+      background-color: #f5e6c9;
+      color: #4c3228;
+      padding: 15px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+      font-size: 18px;
+    }
+
+    .nav-btn:hover {
+      background: #ffffff;
+    }
+
+    section {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin: 40px auto;
+      width: 80%;
+    }
+
+    #xz1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      font-weight: 400;
+      color: #333333;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .project {
+      background: #ecdab4;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 80%;
+    }
+
+    .project img {
+      width: 100%;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    /* Skills Section */
+    .skills-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+
+    .skill-card {
+      background-color: #ecdab4;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: left;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .skill-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .skill-card h3 {
+      margin-bottom: 10px;
+      color: #3c2b20;
+    }
+
+    .skill-card ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin: 0 0 15px;
+    }
+
+    .skill-card ul li {
+      margin-bottom: 6px;
+      font-size: 1rem;
+      color: #2b2b2b;
+    }
+
+    .skill-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    @media (max-width: 768px) {
+      .skills-container {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .contact p {
+      font-size: 1rem;
+      color: #333;
+      margin: 10px 0;
+    }
+
+    .contact a {
+      color: #4c3228;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #4c3228;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="htmlbasics/webp1.jpg" alt="Profile Picture" />
+    <h1>MANIDEEPAK KONDRA</h1>
+    <p>Web Developer | Designer | Freelancer</p>
+    <nav>
+      <ul>
+        <li><a href="#about" class="nav-btn">About</a></li>
+        <li><a href="#projects" class="nav-btn">Projects</a></li>
+        <li><a href="#skills" class="nav-btn">Skills</a></li>
+        <li><a href="#contact" class="nav-btn">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p id="xz1">Hi! I'm Manideepak, a passionate and enthusiastic Computer Science and Engineering student currently in my 3rd year at Gayatri Vidya Parishad College of Engg. Vizag. I have a keen interest in web development, and I enjoy turning ideas into real, responsive, and functional websites.</p>
+    <p id="xz1">Over the past few months, I've been diving deep into frontend and backend technologies, building projects that reflect both creativity and functionality. I'm comfortable working with tools and technologies like HTML, CSS, JavaScript, React.js, Node.js, and MongoDB, and I'm always excited to learn more and stay updated with industry trends.</p>
+    <p id="xz1">What drives me is the constant curiosity to solve problems, explore new tools, and build meaningful web applications that offer a great user experience. I'm currently looking for internship opportunities where I can contribute, learn from industry professionals, and grow into a proficient full-stack web developer.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>👜 Bag Seller Website</h3>
+      <p id="xz1">A clean and responsive e-commerce landing page for a bag-selling brand, built using HTML and CSS. The website showcases products with attractive visuals, a modern layout, and smooth styling, aiming to deliver a user-friendly shopping experience.<br>✅ Features: Product display, navigation bar, responsive design, stylish UI elements.</p>
+    </div>
+
+    <div class="project">
+      <h3>✅ To-Do List Web App</h3>
+      <p id="xz1">A simple and intuitive To-Do List application created using HTML, CSS, and JavaScript. It allows users to add, delete, and manage daily tasks efficiently with a clean user interface and smooth interactions.<br>✅ Features: Add/Delete tasks, task completion toggle, minimal and responsive design.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+
+      <div class="skill-card">
+        <h3>Programming Languages</h3>
+        <ul>
+          <li>C</li>
+          <li>C++</li>
+          <li>Python</li>
+          <li>Java (Basics)</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h3>Web Development</h3>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript (ES6+)</li>
+          <li>React.js</li>
+          <li>Node.js (Basics)</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h3>Data Analytics</h3>
+        <ul>
+          <li>Python (Pandas, NumPy)</li>
+          <li>SQL (Basics)</li>
+          <li>Excel (Pivot Tables)</li>
+          <li>Matplotlib, Seaborn</li>
+          <li>Jupyter Notebook</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h3>Extracurricular Activities</h3>
+        <ul>
+          <li>Video Editing (CapCut, VN, Filmora)</li>
+          <li>Multimedia Content Creation</li>
+          <li>Event Management Volunteer</li>
+          <li>Public Speaking</li>
+          <li>Team Leadership</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>You can reach out to me anytime for collaboration, internship opportunities, or project discussions.</p>
+    <p><strong>Email:</strong> kondramanideepak@gmail.com</p>
+    <p><strong>Phone:</strong> +91 83285 51851</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Manideepak Kondra. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
